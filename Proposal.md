@@ -23,6 +23,7 @@ Develop styling to account for mobile devices.
 DALLE AI image generation tab
 Funny idea add console.logs for other developers.
 Firebase implementation
+Research and potentially implement https://www.fullstory.com/
 
 What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
 
