@@ -9,6 +9,9 @@ Create a custom webpage that I can use to showcase my work as a developer.
 My portfolio will have a custom domain and will be available on presentation day.
 It will have links to my past projects/code reviews.
 It will have an attractive homepage with custom styling
+I will have consistent design language with a custom header/footer present throughout the app.
+I need to understand more about hosting and will dive into hosting my website on a Rasberry Pi.
+I will start with this resource (I have no previous experience with Rasberry Pi). https://www.codecademy.com/learn/learn-raspberry-pi
 
 What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
 I intend to develop this application with React and JS animations.  
@@ -32,3 +35,4 @@ https://firebase.google.com/
 https://cloud.google.com/load-balancing/docs/ssl-certificates/google-managed-certs
 
 Is there anything else you'd like your instructor to know?
+Not at this time.
