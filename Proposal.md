@@ -33,6 +33,10 @@ What additional tools, frameworks, libraries, APIs, or other resources will thes
 https://openai.com/blog/dall-e/
 https://firebase.google.com/
 https://cloud.google.com/load-balancing/docs/ssl-certificates/google-managed-certs
+https://www.youtube.com/watch?v=33VYnE7Bzpk - How do SSL Certificates work.
+https://www.youtube.com/watch?v=P7FwFANxW4s - Basic intro into Firebase.
+https://www.youtube.com/watch?v=QdHvS0D1zAI - How to host your website on the RPi4
+https://www.youtube.com/watch?v=BpJCAafw2qE - Raspberry Pi 4 Getting Started
 
 Is there anything else you'd like your instructor to know?
-Not at this time.
+I spent the majority of my first session seeking resources/reading documentation.
