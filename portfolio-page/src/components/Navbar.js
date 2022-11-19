@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faHouse, faAddressCard, faToolbox, faRectangleList, faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons';
 import '../scss/navbar.scss';
 
@@ -34,7 +35,9 @@ const Navbar = () => (
         </span>
       </div>
     </nav>
-    <div className='navbar__github'>GitHUB link</div>
+    <div className='navbar__github'>
+      <FontAwesomeIcon icon={ faGithub } color="#F6F6C9" size='lg' />
+     </div>
   </div>
 )
 

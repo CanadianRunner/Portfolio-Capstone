@@ -21,3 +21,5 @@ Started following tutorial from freeCodeCamp to get ideas for my Portfolio (focu
 Looked at documentation.
 
 https://www.youtube.com/watch?v=bmpI252DmiI&list=PLvPoIRcySS89xrI1HSKMpml0aEVW381Ht&index=2
+
+//React anchor scroll look into animating logos based on where the user is on the page.
