@@ -12,3 +12,10 @@
 
 #### Saturday, 11/5/2022
 * 11am-2pm working on a Codecademy course introducing Rasberry Pi.
+
+#### Friday, 11/18/2022
+* 4:30pm - 
+
+Started following tutorial from freeCodeCamp to get ideas for my Portfolio (focused on their ideas for UI/UX).
+
+https://www.youtube.com/watch?v=bmpI252DmiI&list=PLvPoIRcySS89xrI1HSKMpml0aEVW381Ht&index=2
