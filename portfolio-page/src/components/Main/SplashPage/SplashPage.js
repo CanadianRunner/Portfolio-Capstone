@@ -15,6 +15,7 @@ function SplashPage(props) {
           <div className='splash__name'>
             <h1 class="animate__animated animate__rubberBand">Sean Keane</h1>
             <h3>This site is under construction!</h3>
+            <h2>This is a test of a script deployment</h2>
           </div>
           <div className='splash__socials'>
             <FontAwesomeIcon icon={faGithub} size='3x' color='#f6f6c9' />
