@@ -24,6 +24,14 @@ https://www.youtube.com/watch?v=bmpI252DmiI&list=PLvPoIRcySS89xrI1HSKMpml0aEVW38
 
 //React anchor scroll look into animating logos based on where the user is on the page.
 
-2:00pm setup server
+11/19/2022 
+9am-1pm Developed starter landing page of website.
+1:00pm -5pm setup server
+5pm-8:45pm Worked on deploying site via Docker and created script to make future deployments simplier.
+
+
 created ssh key
 https://www.youtube.com/watch?v=xtllpDEOw4w
+
+Watched video on React Docker Deployment
+https://www.youtube.com/watch?v=xtllpDEOw4w&t=472s
