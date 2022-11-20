@@ -1,0 +1,38 @@
+@import 'master-styles.scss';
+
+.splash {
+  // a rare use case for vh
+  height: 100vh;
+  background-color: #153462;
+  padding: 25px 50px;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 10px;
+    // justify-content: center;
+
+    &:hover {
+      gap: 30px;
+    }
+  }
+
+  &__name {
+    font-size: 45px;
+
+    h1 {
+      margin: 0;
+    }
+  }
+}

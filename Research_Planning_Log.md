@@ -23,3 +23,7 @@ Looked at documentation.
 https://www.youtube.com/watch?v=bmpI252DmiI&list=PLvPoIRcySS89xrI1HSKMpml0aEVW381Ht&index=2
 
 //React anchor scroll look into animating logos based on where the user is on the page.
+
+2:00pm setup server
+created ssh key
+https://www.youtube.com/watch?v=xtllpDEOw4w
