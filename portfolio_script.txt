@@ -1,0 +1,8 @@
+#!/bin/bash
+rm -rf Portfolio-Capstone
+git clone git@github.com:CanadianRunner/Portfolio-Capstone.git --config core.sshCommand="ssh -i ./.ssh/sean_id"
+cd Portfolio-Capstone/portfolio-page/ 
+docker build -t portfolio .
+docker stop portfolio
+docker container rm portfolio
+docker run -p 3000:3000 --name portfolio -d portfolio

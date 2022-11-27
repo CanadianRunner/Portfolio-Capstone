@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# Portfolio Script for Server
+.portfolio_script.txt
+
 # testing
 /coverage
 
