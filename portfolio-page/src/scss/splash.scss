@@ -4,7 +4,6 @@
   // a rare use case for vh
   height: 100vh;
   background-color: #153462;
-  padding: 25px 50px;
 
   &__content {
     display: flex;
@@ -34,5 +33,11 @@
     h1 {
       margin: 0;
     }
+  }
+
+  &__video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
   }
 }

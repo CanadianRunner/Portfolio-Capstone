@@ -3,10 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faHouse, faAddressCard, faToolbox, faRectangleList, faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons';
 import '../scss/navbar.scss';
+import FaviconMyLogo from '../assets/FaviconMyLogo.png';
 
 const Navbar = () => (
   <div className='navbar'>
-    <div className='navbar__logo'>Logo</div>
+    <img className="navbar__logo" src={FaviconMyLogo} alt='a logo of the pnw mountain range'/>
     {/* When you get a logo it goes here */}
     <nav className='navbar__link-group'>
       <div className='navbar__link'>

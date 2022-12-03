@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import SplashPage from './SplashPage/SplashPage'
+import SplashPage from './SplashPage'
 import '../../scss/splash-page.scss';
 
 function Home(props) {
