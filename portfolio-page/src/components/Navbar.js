@@ -12,32 +12,32 @@ const Navbar = () => (
     <nav className='navbar__link-group'>
       <div className='navbar__link'>
         <span className='navbar__home'>
-          <FontAwesomeIcon icon={faHouse} color="#F6F6C9" size='2x' />
+          <FontAwesomeIcon icon={faHouse} color="#A5C9CA" size='2x' />
         </span>
       </div>
       <div className='navbar__link'>
         <span className='navbar__about'>
-          <FontAwesomeIcon icon={faAddressCard} color="#F6F6C9" size='2x' />
+          <FontAwesomeIcon icon={faAddressCard} color="#A5C9CA" size='2x' />
         </span>
       </div>
       <div className='navbar__link'>
         <span className='navbar__skills'>
-          <FontAwesomeIcon icon={faToolbox} color="#F6F6C9" size='2x' />
+          <FontAwesomeIcon icon={faToolbox} color="#A5C9CA" size='2x' />
         </span>
       </div>
       <div className='navbar__link'>
         <span className='navbar__projects'>
-          <FontAwesomeIcon icon={faRectangleList} color="#F6F6C9" size='2x' />
+          <FontAwesomeIcon icon={faRectangleList} color="#A5C9CA" size='2x' />
         </span>
       </div>
       <div className='navbar__link'>
         <span className='navbar__contact'>
-            <FontAwesomeIcon icon={faEnvelopeOpenText} color="#F6F6C9" size='2x' />
+            <FontAwesomeIcon icon={faEnvelopeOpenText} color="#A5C9CA" size='2x' />
         </span>
       </div>
     </nav>
     <div className='navbar__github'>
-      <FontAwesomeIcon icon={ faGithub } color="#F6F6C9" size='lg' />
+      <FontAwesomeIcon icon={ faGithub } color="#A5C9CA" size='lg' />
      </div>
   </div>
 )

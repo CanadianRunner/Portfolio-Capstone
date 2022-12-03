@@ -1,0 +1,14 @@
+@import 'master-styles.scss';
+
+.about {
+  display: flex;
+  padding: 20px;
+
+  &__me {
+    flex-grow: 1;
+  }
+
+  &__video {
+    flex-grow: 2;
+  }
+}

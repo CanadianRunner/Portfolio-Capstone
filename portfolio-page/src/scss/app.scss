@@ -1,1 +1,10 @@
-@use 'master-styles.scss' 
+@import 'master-styles.scss';
+
+.app {
+  background-color: $backgroundcolor;
+  
+  &__navbar {
+    position: sticky;
+    top: 0;
+  }
+}

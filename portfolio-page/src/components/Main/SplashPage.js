@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import '../../scss/splash.scss';
-import SK from '../../assets/SK.mp4';
+import SK from '../../assets/SplashPageVid.mp4';
 
 function SplashPage(props) {
   return (
