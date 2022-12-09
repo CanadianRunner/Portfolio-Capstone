@@ -37,7 +37,7 @@ const Navbar = () => (
       </div>
     </nav>
     <div className='navbar__github'>
-      <FontAwesomeIcon icon={ faGithub } color="#A5C9CA" size='lg' />
+      <FontAwesomeIcon icon={ faGithub } color="#A5C9CA" size='2x' />
      </div>
   </div>
 )

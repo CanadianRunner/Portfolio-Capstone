@@ -3,12 +3,17 @@
 .about {
   display: flex;
   padding: 20px;
+  
 
   &__me {
     flex-grow: 1;
+    float: left;
   }
 
   &__video {
     flex-grow: 2;
+    width: 100%;
+    float: right;
+    padding-left: 20px;
   }
 }
