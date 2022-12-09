@@ -1,0 +1,13 @@
+@import 'master-styles.scss';
+
+.skills {
+  display: flex;
+  padding: 20px;
+  
+  &__certs {
+    flex-grow: 1;
+    float: left;
+  }
+
+  
+}

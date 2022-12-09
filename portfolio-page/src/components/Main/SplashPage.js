@@ -21,7 +21,6 @@ function SplashPage(props) {
 
 )
 }
-
 // {/* <h1 class="animate__animated animate__rubberBand">Sean Keane</h1> */}
 SplashPage.propTypes = {}
 
