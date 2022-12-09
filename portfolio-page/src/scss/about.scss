@@ -5,7 +5,11 @@
   display: flex;
   padding: 20px;
   border-radius: 10px;
-  
+
+  &__title {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
 
   &__me {
     flex-grow: 1;
@@ -22,6 +26,5 @@
   &__content {
     display: flex;
     flex-direction: column;
-
   }
 }
