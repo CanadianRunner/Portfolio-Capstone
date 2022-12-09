@@ -10,9 +10,13 @@
     margin-left: 20px;
   }
 
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+  }
+
   &__icons {
     display: flex;
     justify-content: space-between;
   }
-
 }
