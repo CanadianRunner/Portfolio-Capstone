@@ -2,12 +2,17 @@
 
 .skills {
   display: flex;
-  padding: 20px;
+  padding: 0 20px 10px 20px;
+  margin: 0 25px 10px 25px;
   
-  &__certs {
+  &__body {
     flex-grow: 1;
-    float: left;
+    margin-left: 20px;
   }
 
-  
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+  }
+
 }
