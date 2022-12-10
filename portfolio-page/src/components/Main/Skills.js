@@ -15,7 +15,7 @@ function Skills(props) {
   return (
     <div className='skills'>
       <div className='skills__body'>
-        <h2 className='skills__title'>SKILLS</h2> 
+        <h2 className='skills__title'>Development Experience</h2> 
         <div className='skills__icons'>
           {/* C# */}
           <svg viewBox="0 0 128 128" width='100' onMouseEnter={addShake} onMouseLeave={removeShake}>

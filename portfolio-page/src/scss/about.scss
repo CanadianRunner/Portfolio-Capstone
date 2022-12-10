@@ -11,11 +11,13 @@
   height: 100%;
   background-color: #213D58;
   
+  
 
   &__title {
     font-size: 50px;
     margin-bottom: 15px;
     margin-left: 1%;
+    color: #213D58;
   }
 
   &__me {
@@ -35,6 +37,7 @@
     //   max-height: 300px;
     // }
   }
+
 
   &__video-container {
     margin-left: 25px;
