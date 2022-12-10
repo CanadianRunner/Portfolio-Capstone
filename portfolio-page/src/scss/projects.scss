@@ -1,1 +1,19 @@
 @import 'master-styles.scss';
+
+.projects {
+  &__card-group {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  &__card {
+    max-height: 25%;
+    max-width: 25%;
+    
+  }
+
+  &__card-image {
+    object-fit: cover;
+  }
+}
