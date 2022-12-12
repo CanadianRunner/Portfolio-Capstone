@@ -1,8 +1,12 @@
 import React from 'react'
-import { Card, CardMedia } from '@mui/material';
-// import { faGithub } from '@fortawesome/free-brands-svg-icons'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Factory from '../../assets/Factory_Repo.png'
+import { Card, CardContent, CardActions, CardMedia, Typography, Button } from '@mui/material';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Factory from '../../assets/Factory_Repo.png';
+import Dotties from '../../assets/Dotties_Repo.png';
+import Bakery from '../../assets/Bakery_Repo.png';
+import F1 from '../../assets/F1_Repo.jpg'
+
 import '../../scss/projects.scss';
 
 function Projects(props) {
@@ -18,7 +22,7 @@ function Projects(props) {
 
   return (
     <div className='projects'>
-      <div className='projects__card-group'>
+      <div className='projects__card-group1'>
         <Card onMouseEnter={showDetails} onMouseLeave={removeDetails} className='projects__card'>
           <CardMedia
             className='projects__card-image'
@@ -43,8 +47,49 @@ function Projects(props) {
             <Button size="small"><FontAwesomeIcon icon={faGithub}/></Button>
           </CardActions> */}
         </Card>
+
+        <Card onMouseEnter={showDetails} onMouseLeave={removeDetails} className='projects__card'>
+          <CardMedia
+            className='projects__card-image'
+            component="img"
+            height="100%"
+            image={Dotties}
+            alt="thing"
+          />
+          <div>
+            Hello World
+          </div>
+        </Card>
+        </div>
+        <div className='projects__card-group2'>
+        <Card onMouseEnter={showDetails} onMouseLeave={removeDetails} className='projects__card'>
+          <CardMedia
+            className='projects__card-image'
+            component="img"
+            height="100%"
+            image={Bakery}
+            alt="thing"
+          />
+          <div>
+            Hello World
+          </div>
+        </Card>
+
+        <Card onMouseEnter={showDetails} onMouseLeave={removeDetails} className='projects__card'>
+          <CardMedia
+            className='projects__card-image'
+            component="img"
+            height="100%"
+            image={F1}
+            alt="thing"
+          />
+          <div>
+            Hello World
+          </div>
+        </Card>
+        </div>
       </div>
-    </div>
+    
   )
 }
 

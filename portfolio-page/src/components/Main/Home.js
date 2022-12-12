@@ -15,7 +15,6 @@ function Home(props) {
       <Skills />
       <Certificates />
       <Projects />
-
     </div>
   )
 }

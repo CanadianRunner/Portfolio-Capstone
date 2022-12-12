@@ -1,130 +1,53 @@
-// import React from 'react';
-// import { useTheme } from '@mui/material/styles';
-// import Box from '@mui/material/Box';
-// import MobileStepper from '@mui/material/MobileStepper';
-// import Paper from '@mui/material/Paper';
-// import Typography from '@mui/material/Typography';
-// import Button from '@mui/material/Button';
-// import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
-// import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-// import SwipeableViews from 'react-swipeable-views';
-// import { autoPlay } from 'react-swipeable-views-utils';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Carousel from 'react-material-ui-carousel'
+import { Paper, Button } from '@mui/material'
+import { GooglePic } from '../../assets/GoogleCoursera.png'
 
-// const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+<div nameSpace='cert-carousel'>
+  
 
-// const images = [
-//   {
-//     label: 'San Francisco – Oakland Bay Bridge, United States',
-//     imgPath:
-//       'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
-//   },
-//   {
-//     label: 'Bird',
-//     imgPath:
-//       'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
-//   },
-//   {
-//     label: 'Bali, Indonesia',
-//     imgPath:
-//       'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250',
-//   },
-//   {
-//     label: 'Goč, Serbia',
-//     imgPath:
-//       'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
-//   },
-// ];
+</div>
+function Certificates(props, GooglePic) {
+  var items = [
+    {
+        name: "Random Name #1",
+        description: "Probably the most random thing you have ever seen!",
+        src: '../../assets/GoogleCoursera.png',
+        alt: "Google Certificate"
+      
+  
+    },
+    
+    {
+        name: "Random Name #2",
+        description: "Hello World!"
+    }
+]
 
-// function Certificates() {
-//   const theme = useTheme();
-//   const [activeStep, setActiveStep] = React.useState(0);
-//   const maxSteps = images.length;
+  return (
+    <Carousel>
+    {
+        items.map( (item, i) => <Item key={i} item={item} /> )
+    }
+</Carousel>
+  )
+}
 
-//   const handleNext = () => {
-//     setActiveStep((prevActiveStep) => prevActiveStep + 1);
-//   };
+function Item(props)
+{
+    return (
+        <Paper>
+            <h2>{props.item.name}</h2>
+            <p>{props.item.description}</p>
 
-//   const handleBack = () => {
-//     setActiveStep((prevActiveStep) => prevActiveStep - 1);
-//   };
+            <Button className="CheckButton">
+                Check it out!
+            </Button>
+        </Paper>
+    )
+}
 
-//   const handleStepChange = (step) => {
-//     setActiveStep(step);
-//   };
+Certificates.propTypes = {}
 
-//   return (
-//     <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
-//       <Paper
-//         square
-//         elevation={0}
-//         sx={{
-//           display: 'flex',
-//           alignItems: 'center',
-//           height: 50,
-//           pl: 2,
-//           bgcolor: 'background.default',
-//         }}
-//       >
-//         <Typography>{images[activeStep].label}</Typography>
-//       </Paper>
-//       <AutoPlaySwipeableViews
-//         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-//         index={activeStep}
-//         onChangeIndex={handleStepChange}
-//         enableMouseEvents
-//       >
-//         {images.map((step, index) => (
-//           <div key={step.label}>
-//             {Math.abs(activeStep - index) <= 2 ? (
-//               <Box
-//                 component="img"
-//                 sx={{
-//                   height: 255,
-//                   display: 'block',
-//                   maxWidth: 400,
-//                   overflow: 'hidden',
-//                   width: '100%',
-//                 }}
-//                 src={step.imgPath}
-//                 alt={step.label}
-//               />
-//             ) : null}
-//           </div>
-//         ))}
-//       </AutoPlaySwipeableViews>
-//       <MobileStepper
-//         steps={maxSteps}
-//         position="static"
-//         activeStep={activeStep}
-//         nextButton={
-//           <Button
-//             size="small"
-//             onClick={handleNext}
-//             disabled={activeStep === maxSteps - 1}
-//           >
-//             Next
-//             {theme.direction === 'rtl' ? (
-//               <KeyboardArrowLeft />
-//             ) : (
-//               <KeyboardArrowRight />
-//             )}
-//           </Button>
-//         }
-//         backButton={
-//           <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-//             {theme.direction === 'rtl' ? (
-//               <KeyboardArrowRight />
-//             ) : (
-//               <KeyboardArrowLeft />
-//             )}
-//             Back
-//           </Button>
-//         }
-//       />
-//     </Box>
-//   );
-// }
-
-// Certificates.propTypes = {}
-
-// export default Certificates;
+export default Certificates
