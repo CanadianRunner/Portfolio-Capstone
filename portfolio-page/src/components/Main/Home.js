@@ -5,6 +5,7 @@ import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
 import '../../scss/splash-page.scss';
+import Certificates from './Certificates';
 
 function Home(props) {
   return (
@@ -12,7 +13,9 @@ function Home(props) {
       <SplashPage />
       <About />
       <Skills />
+      <Certificates />
       <Projects />
+
     </div>
   )
 }
