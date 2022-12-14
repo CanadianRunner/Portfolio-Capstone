@@ -1,1 +1,30 @@
 @import 'master-styles.scss';
+
+.contact__card {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      margin-right: 25px;
+      margin-left: 10px;
+      box-shadow: 13px 13px $primaryColor;
+      background: $backgroundcolor;
+      text-align: center;
+      padding-bottom: 50px;
+
+  // & h1 {
+  //   text-align: center;
+  // }
+
+ .card {
+  width: 100%;
+  margin-right: 25px;
+  margin-left: 10px;
+  box-shadow: 13px 13px $secondaryColor;
+  // background: $secondaryColor;
+}
+
+.contact__input {
+  padding: 3%;
+}
+
+}

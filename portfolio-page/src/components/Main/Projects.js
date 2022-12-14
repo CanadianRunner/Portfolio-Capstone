@@ -22,6 +22,9 @@ function Projects(props) {
 
   return (
     <div className='projects'>
+      <span className='projects__title'>
+      <h1>My Projects</h1>
+      </span>
       <div className='projects__card-group1'>
         <Card onMouseEnter={showDetails} onMouseLeave={removeDetails} className='projects__card'>
           <CardMedia

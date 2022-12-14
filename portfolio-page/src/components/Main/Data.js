@@ -8,6 +8,10 @@ export const certificates = [
 
 // ]
 
+{
+  image: "../../assets/GoogleCoursera.png",
+  title: "Google IT Support Certificate"
+},
   {
     image: "../../assets/API_Cert.png",
     title: "API Certificate"

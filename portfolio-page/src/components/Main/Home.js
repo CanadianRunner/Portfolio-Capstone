@@ -3,6 +3,7 @@ import SplashPage from './SplashPage'
 import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
+import Contact from './Contact';
 import '../../scss/splash-page.scss';
 import Certificates from './Certificates';
 import Carousel from '../../components/Main/Carousel';
@@ -17,6 +18,7 @@ function Home(props) {
       <Carousel images={certificates} />
       <Certificates />
       <Projects />
+      <Contact /> 
     </div>
   )
 }
