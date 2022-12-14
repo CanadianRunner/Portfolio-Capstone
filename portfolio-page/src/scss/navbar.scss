@@ -12,6 +12,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  :hover {
+    color: #FDE46D;
+  }
 
   &__link-group {
     display: flex;

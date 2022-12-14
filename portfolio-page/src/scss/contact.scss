@@ -17,7 +17,11 @@
   margin-right: 25px;
   margin-left: 25px;
   box-shadow: 13px 13px $secondaryColor;
-  color: #213D58;
+  color: #E7F6F2;
+}
+
+.contact__logo {
+  padding: 2%;
 }
 
 .contact__title {
@@ -35,6 +39,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  :hover {
+    color: #FDE46D;
+  }
 }
 
 .contact__link {

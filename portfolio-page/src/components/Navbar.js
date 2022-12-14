@@ -5,38 +5,39 @@ import { faHouse, faAddressCard, faToolbox, faRectangleList, faEnvelopeOpenText,
 import '../scss/navbar.scss';
 import FaviconMyLogo from '../assets/FaviconMyLogo.png';
 
+
 const Navbar = () => (
   <div className='navbar'>
     <img className="navbar__logo" src={FaviconMyLogo} alt='a logo of the pnw mountain range'/>
     <nav className='navbar__link-group'>
       <div className='navbar__link'>
         <span className='navbar__home'>
-          <FontAwesomeIcon icon={faHouse} color="#A5C9CA" size='2x' />
+          <FontAwesomeIcon icon={faHouse} color="#A5C9CA" size='2x' alt='home button'/>
         </span>
       </div>
       <div className='navbar__link'>
         <span className='navbar__about'>
-          <FontAwesomeIcon icon={faAddressCard} color="#A5C9CA" size='2x' />
+          <FontAwesomeIcon icon={faAddressCard} color="#A5C9CA" size='2x' alt='about me' />
         </span>
       </div>
       <div className='navbar__link'>
         <span className='navbar__skills'>
-          <FontAwesomeIcon icon={faToolbox} color="#A5C9CA" size='2x' />
-        </span>
-      </div>
-      <div className='navbar__link'>
-        <span className='navbar__contact'>
-            <FontAwesomeIcon icon={faGraduationCap} color="#A5C9CA" size='2x' />
-        </span>
-      </div>
-      <div className='navbar__link'>
-        <span className='navbar__projects'>
-          <FontAwesomeIcon icon={faRectangleList} color="#A5C9CA" size='2x' />
+          <FontAwesomeIcon icon={faToolbox} color="#A5C9CA" size='2x' alt='skills/certifications'/>
         </span>
       </div>
       <div className='navbar__link'>
         <span className='navbar__education'>
-            <FontAwesomeIcon icon={faEnvelopeOpenText} color="#A5C9CA" size='2x' />
+            <FontAwesomeIcon icon={faGraduationCap} color="#A5C9CA" size='2x' alt='education' />
+        </span>
+      </div>
+      <div className='navbar__link'>
+        <span className='navbar__projects'>
+          <FontAwesomeIcon icon={faRectangleList} color="#A5C9CA" size='2x' alt='projects' />
+        </span>
+      </div>
+      <div className='navbar__link'>
+        <span className='navbar__contact'>
+            <FontAwesomeIcon icon={faEnvelopeOpenText} color="#A5C9CA" size='2x' alt='contact me' />
         </span>
       </div>
     </nav>

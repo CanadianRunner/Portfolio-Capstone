@@ -7,6 +7,9 @@ import "../../scss/contact.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import skLogo  from '../../assets/Sean-Keane_LOGO.png';
+
+
 
 export const Contact = () => {
   const form = useRef();
@@ -64,6 +67,9 @@ export const Contact = () => {
             <textarea name="message" />
             <input type="submit" value="Send" />
           </form>
+        </div>
+        <div className='contact__logo'>
+          <img src={skLogo} alt='contact-logo' width={200}></img>
         </div>
       </Card>
     </div>
