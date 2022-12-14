@@ -16,7 +16,6 @@ function Home(props) {
       <About />
       <Skills />
       <Carousel images={certificates} />
-      <Certificates />
       <Projects />
       <Contact /> 
     </div>
