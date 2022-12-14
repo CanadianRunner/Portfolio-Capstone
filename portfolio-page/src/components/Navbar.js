@@ -8,7 +8,6 @@ import FaviconMyLogo from '../assets/FaviconMyLogo.png';
 const Navbar = () => (
   <div className='navbar'>
     <img className="navbar__logo" src={FaviconMyLogo} alt='a logo of the pnw mountain range'/>
-    {/* When you get a logo it goes here */}
     <nav className='navbar__link-group'>
       <div className='navbar__link'>
         <span className='navbar__home'>

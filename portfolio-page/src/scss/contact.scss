@@ -2,29 +2,43 @@
 
 .contact__card {
       display: flex;
-      width: 100%;
+      justify-content: center;
+      width: 80%;
       height: 100%;
       margin-right: 25px;
-      margin-left: 10px;
-      box-shadow: 13px 13px $primaryColor;
+      margin-left: 25px;
       background: $backgroundcolor;
       text-align: center;
       padding-bottom: 50px;
-
-  // & h1 {
-  //   text-align: center;
-  // }
+      padding-left: 18%;
 
  .card {
-  width: 100%;
+  width: 80%;
   margin-right: 25px;
-  margin-left: 10px;
+  margin-left: 25px;
   box-shadow: 13px 13px $secondaryColor;
-  // background: $secondaryColor;
+  color: #213D58;
+}
+
+.contact__title {
+  text-align: center;
+    font-size: 1.5rem;
+    color: #213D58;
+    padding: 1%;
 }
 
 .contact__input {
   padding: 3%;
+}
+
+.contact__icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact__link {
+  padding: 1.5%;
 }
 
 }
