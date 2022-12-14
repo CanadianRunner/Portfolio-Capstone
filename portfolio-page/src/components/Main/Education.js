@@ -27,7 +27,7 @@ function Education(props) {
           </div>
         </div>
         <div className='education__body'>
-          <p>I recently completed my time-intensive Bootcamp at Epicodus.  This ten-month-long commitment helped develop my understanding of HTML, CSS, JavaScript, React, C#/.NET, MySQL, and many more technologies. In addition, my Bootcamp readied me for the workforce with daily stand-ups/retrospectives, bi-weekly code reviews, and over 800 hours of pair programming.</p>
+          <p>I recently completed a time-intensive Bootcamp at Epicodus.  This ten-month-long commitment helped develop my understanding of HTML, CSS, JavaScript, React, C#/.NET, MySQL, and many more technologies. In addition, my Bootcamp readied me for the workforce with daily stand-ups/retrospectives, bi-weekly code reviews, and over 800 hours of pair programming.</p>
           <br></br>
           <p>I also pursued certifications and learning opportunities from Codecademy and Coursera. These opportunities helped fill knowledge gaps and solidified complex concepts.</p>
           <br></br>
