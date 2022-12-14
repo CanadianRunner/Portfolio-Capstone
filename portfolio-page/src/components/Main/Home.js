@@ -5,9 +5,9 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
 import '../../scss/splash-page.scss';
-import Certificates from './Certificates';
 import Carousel from '../../components/Main/Carousel';
 import { certificates } from '../../components/Main/Data';
+import Education from './Education';
 
 function Home(props) {
   return (
@@ -16,6 +16,7 @@ function Home(props) {
       <About />
       <Skills />
       <Carousel images={certificates} />
+      <Education />
       <Projects />
       <Contact /> 
     </div>
