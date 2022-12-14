@@ -36,8 +36,9 @@ const Navbar = () => (
         </span>
       </div>
     </nav>
+    
     <div className='navbar__github'>
-      <FontAwesomeIcon icon={ faGithub } color="#A5C9CA" size='2x' />
+      <FontAwesomeIcon icon={ faGithub } color="#A5C9CA" size='2x' href='https://github.com/CanadianRunner' />
      </div>
   </div>
 )

@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import "../../scss/carousel.scss";
+import  GooglePic  from '../../assets/GoogleCoursera.png'
 
 function Carousel({ images }) {
   const [current, setCurrent] = useState(0);
