@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faHouse, faAddressCard, faToolbox, faRectangleList, faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faAddressCard, faToolbox, faRectangleList, faEnvelopeOpenText, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import '../scss/navbar.scss';
 import FaviconMyLogo from '../assets/FaviconMyLogo.png';
 
@@ -25,12 +25,17 @@ const Navbar = () => (
         </span>
       </div>
       <div className='navbar__link'>
+        <span className='navbar__contact'>
+            <FontAwesomeIcon icon={faGraduationCap} color="#A5C9CA" size='2x' />
+        </span>
+      </div>
+      <div className='navbar__link'>
         <span className='navbar__projects'>
           <FontAwesomeIcon icon={faRectangleList} color="#A5C9CA" size='2x' />
         </span>
       </div>
       <div className='navbar__link'>
-        <span className='navbar__contact'>
+        <span className='navbar__education'>
             <FontAwesomeIcon icon={faEnvelopeOpenText} color="#A5C9CA" size='2x' />
         </span>
       </div>
