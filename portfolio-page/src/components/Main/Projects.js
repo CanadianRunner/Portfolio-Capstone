@@ -21,7 +21,7 @@ function Projects(props) {
   }
 
   return (
-    <div className='projects'>
+    <div className='projects' id="projectsId">
       <span className='projects__title'>
       <h1>My Projects</h1>
       </span>

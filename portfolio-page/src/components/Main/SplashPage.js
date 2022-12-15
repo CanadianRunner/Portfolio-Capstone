@@ -5,19 +5,18 @@ import SK from "../../assets/SplashPageVid.mp4";
 
 function SplashPage(props) {
   return (
-    <div className="splash">
+    <div className="splash" id='splashId'>
       <div className="splash__content">
         <video src={SK} className="splash__video" autoPlay="1" muted></video>
       </div>
-      <div class="container">
-          <div class="chevron"></div>
-          <div class="chevron"></div>
-          <div class="chevron"></div>
+      <div className="container">
+          <div className="chevron"></div>
+          <div className="chevron"></div>
+          <div className="chevron"></div>
         </div>
     </div>
   );
 }
-// {/* <h1 class="animate__animated animate__rubberBand">Sean Keane</h1> */}
 SplashPage.propTypes = {};
 
 export default SplashPage;

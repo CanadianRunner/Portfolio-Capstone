@@ -36,7 +36,7 @@ function Repos( {images} ) {
         setAutoPlay(true);
       }}
     >
-      <div className="carousel_wrapper">
+      <div className="carousel_wrapper" id="carouselWrapper">
         {images.map((image, index) => {
           return (
             <div

@@ -10,7 +10,7 @@ import WGU2 from '../../assets/wgu-logo2.png';
 
 function Education(props) {
   return (
-    <div className='education__section'>
+    <div className='education__section' id='educationId'>
     <div className='education'>
     <Card variant="outlined" className='education__card' sx={{background: '#E7F6F2'}}> 
       <div className='education__content'>

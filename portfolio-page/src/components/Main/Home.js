@@ -11,7 +11,7 @@ import Education from './Education';
 
 function Home(props) {
   return (
-    <div className='home'>
+    <div className='home' id="homeId">
       <SplashPage />
       <About />
       <Skills />

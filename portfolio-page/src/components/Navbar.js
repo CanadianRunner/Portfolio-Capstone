@@ -1,52 +1,81 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faHouse, faAddressCard, faToolbox, faRectangleList, faEnvelopeOpenText, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import '../scss/navbar.scss';
 import FaviconMyLogo from '../assets/FaviconMyLogo.png';
+import NavItem from './Main/NavItem';
 
+const navItems = {
+  homeId: null,
+  aboutMe: null,
+  skillsId: null,
+  educationId: null,
+  projectsId: null, 
+  contactCard: null
+}
 
-const Navbar = () => (
-  <div className='navbar'>
+function Navbar(props) {
+  const [activeItem, setActiveItem] = useState('homeId');
+
+  useEffect(() => {
+    const observer = new MutationObserver(getAnchorPoints);
+    observer.observe(document.getElementById('root'), {
+      childList: true,
+      subtree: true,
+    });
+    window.addEventListener('scroll', handleScroll);
+  }, [])
+
+  const getAnchorPoints = () => {
+    const curScroll = window.scrollY - 100;
+    const viewPortHeight = Math.max(
+      document.documentElement.clientHeight,
+      window.innerHeight || 0
+    );
+
+    for (const key in navItems) {
+      navItems[key] =
+        document.getElementById(key).getBoundingClientRect().top + curScroll;
+
+    }
+    const bottom = document.body.offsetHeight;
+    handleScroll();
+  }
+
+  const handleScroll = () => {
+    const curPos = window.scrollY;
+    let curSection = null;
+    for (const section in navItems) {
+      curSection = navItems[section] >= curPos ? section : curSection
+      if (curSection !== section) {
+        break
+      }
+    }
+    if (curSection !== activeItem) {
+      setActiveItem(curSection)
+    }
+  };
+  
+  const menuList = Object.keys(navItems).map((e, i) => 
+    <NavItem itemName={e} key={`navitem_${i}`} active={e === activeItem ? true : false}  index={i}/>
+  )
+  return (
+    <div className='navbar'>
     <img className="navbar__logo" src={FaviconMyLogo} alt='a logo of the pnw mountain range'/>
     <nav className='navbar__link-group'>
-      <div className='navbar__link'>
-        <span className='navbar__home'>
-          <FontAwesomeIcon icon={faHouse} color="#A5C9CA" size='2x' alt='home button'/>
-        </span>
-      </div>
-      <div className='navbar__link'>
-        <span className='navbar__about'>
-          <FontAwesomeIcon icon={faAddressCard} color="#A5C9CA" size='2x' alt='about me' />
-        </span>
-      </div>
-      <div className='navbar__link'>
-        <span className='navbar__skills'>
-          <FontAwesomeIcon icon={faToolbox} color="#A5C9CA" size='2x' alt='skills/certifications'/>
-        </span>
-      </div>
-      <div className='navbar__link'>
-        <span className='navbar__education'>
-            <FontAwesomeIcon icon={faGraduationCap} color="#A5C9CA" size='2x' alt='education' />
-        </span>
-      </div>
-      <div className='navbar__link'>
-        <span className='navbar__projects'>
-          <FontAwesomeIcon icon={faRectangleList} color="#A5C9CA" size='2x' alt='projects' />
-        </span>
-      </div>
-      <div className='navbar__link'>
-        <span className='navbar__contact'>
-            <FontAwesomeIcon icon={faEnvelopeOpenText} color="#A5C9CA" size='2x' alt='contact me' />
-        </span>
-      </div>
+      {menuList}
     </nav>
     
     <div className='navbar__github'>
+      <a href='https://github.com/CanadianRunner'>
       <FontAwesomeIcon icon={ faGithub } color="#A5C9CA" size='2x' href='https://github.com/CanadianRunner' />
+      </a>
      </div>
   </div>
-)
+  )
+}
 
+Navbar.propTypes = {}
 
-export default Navbar;
+export default Navbar
+

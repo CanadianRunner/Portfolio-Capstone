@@ -1,45 +1,45 @@
-import  GooglePic  from '../../assets/GoogleCoursera.png'
-import APICert from '../../assets/API_Cert.png'
+import  GooglePic  from '../../assets/GoogleCoursera.png';
+import APICert from '../../assets/API_Cert.png';
+import JavaScript from '../../assets/JS_Cert.png';
+import CSharp from '../../assets/CSharp_cert.png';
+import Debug from '../../assets/Debug_JS_Cert.png';
+import Testing from '../../assets/Testing_JS_Cert.png';
+import SQL from '../../assets/SQL_Cert.png';
+
+
+
 export const certificates = [
-
-//   GooglePic,
-//   APICert
-
-
-// ]
-
-{
-  image: "../../assets/GoogleCoursera.png",
-  title: "Google IT Support Certificate"
-},
   {
-    image: "../../assets/API_Cert.png",
+    image: GooglePic,
+    title: "Google IT Support Certificate"
+  },
+  {
+    image: APICert,
     title: "API Certificate"
   },
 
   {
-    image: "../../assets/API_Cert.png",
+    image: CSharp,
     title: "C# Certificate"
   },
 
   {
-    image: "../../assets/Debug_JS_Cert.png",
+    image: Debug,
     title: "Debugging JavaScript Certificate"
   },
 
   {
-    image: "../../assets/JS_Cert.png",
+    image: JavaScript,
     title: "JavaScript Certificate"
   },
 
   {
-    image: "../../assets/Testing_JS_Cert.png",
+    image: Testing,
     title: "JavaScript Testing Certificate"
   },
 
   {
-    image: "../../assets/SQL_Cert.png",
+    image: SQL,
     title: "SQL Certificate"
   }
-
 ]

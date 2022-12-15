@@ -2,7 +2,6 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import "../../scss/carousel.scss";
-import  GooglePic  from '../../assets/GoogleCoursera.png'
 
 function Carousel({ images }) {
   const [current, setCurrent] = useState(0);
@@ -24,7 +23,7 @@ function Carousel({ images }) {
   const slideLeft = () => {
     setCurrent(current === 0 ? images.length - 1 : current - 1);
   };
-  console.log(current);
+
   return (
     <div
       className="carousel"
@@ -36,7 +35,7 @@ function Carousel({ images }) {
         setAutoPlay(true);
       }}
     >
-      <div className="carousel_wrapper">
+      <div className="carousel_wrapper" id="carouselWrapper">
         {images.map((image, index) => {
           return (
             <div

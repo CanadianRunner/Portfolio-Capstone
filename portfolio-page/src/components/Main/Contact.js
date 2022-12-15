@@ -35,7 +35,7 @@ export const Contact = () => {
   };
 
   return (
-    <div className="contact__card">
+    <div className="contact__card" id="contactCard">
       <Card variant="outlined" className="card" sx={{ background: "#A5C9CA" }}>
         <div className="contact__title">
           <h1>Let's get talking!</h1>
@@ -43,17 +43,23 @@ export const Contact = () => {
         <div className="contact__icons">
           <div className="contact__link">
           <div className="contact__linkedin">
-            <FontAwesomeIcon icon={faLinkedin} color="#213D58" size="3x" />
+            <a href="https://www.linkedin.com/in/sean-keane-pdx/">
+              <FontAwesomeIcon icon={faLinkedin} color="#213D58" size="3x" href='' />
+            </a>
           </div>
           </div>
           <div className='contact__link'>
           <div className="contact__github">
-            <FontAwesomeIcon icon={faGithub} color="#213D58" size="3x" />
+            <a href="https://github.com/CanadianRunner">
+              <FontAwesomeIcon icon={faGithub} color="#213D58" size="3x" />
+            </a>
           </div>
           </div>
           <div className="contact__link">
           <div className="contact__email">
-            <FontAwesomeIcon icon={faEnvelope} color="#213D58" size="3x" />
+            <a href="mailto: code@sean-keane.com">
+              <FontAwesomeIcon icon={faEnvelope} color="#213D58" size="3x" />
+            </a>
           </div>
           </div>
         </div>

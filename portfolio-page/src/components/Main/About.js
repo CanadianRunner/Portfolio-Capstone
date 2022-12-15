@@ -5,7 +5,7 @@ import { Card } from '@mui/material';
 
 function About(props) {
   return (
-    <div className='about'>
+    <div className='about' id="aboutMe">
       <div className='about__me'>
         <Card variant="outlined" className='about__card' sx={{background: '#E7F6F2'}}> 
           <div className='about__content'>

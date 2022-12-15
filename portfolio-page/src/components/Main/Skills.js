@@ -13,7 +13,7 @@ function Skills(props) {
     e.target.classList.remove('animate__headShake');
   }
   return (
-    <div className='skills'>
+    <div className='skills' id='skillsId'>
       <div className='skills__body'>
         <h2 className='skills__title'>Development Experience</h2> 
         <div className='skills__icons'>
