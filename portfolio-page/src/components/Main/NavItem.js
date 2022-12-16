@@ -20,7 +20,7 @@ const NavItem = ({ itemName, active, index }) => {
     <div className='navbar__link'>
       <a href={`#${itemName}`}
          onClick={handleClick}
-         className={active ? 'test-class' : 'alt test class'}
+         className={itemName === 'homeId' ? 'active' : ''}
          aria-label={`Scroll to ${itemName}`}>
          <FontAwesomeIcon icon={navIcons[index]} color="#A5C9CA" size='2x' alt='home button'/>
       </a>

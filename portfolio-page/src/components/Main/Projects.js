@@ -9,15 +9,48 @@ import F1 from '../../assets/F1_Repo.jpg'
 
 import '../../scss/projects.scss';
 
+const projects = [
+  {
+    alt:'image of factory',
+    img: Factory,
+    id: 1,
+    title:'C# MVC Application',
+    href: 'https://github.com/CanadianRunner/SillystringzsFactory.Solution'
+  },
+  {
+    alt:'Image of apothecary store',
+    img: Dotties,
+    id: 2,
+    title: "Team Built Application",
+    href:'https://github.com/CanadianRunner/DottiesApothecarry.Solution'
+  },
+  {
+    alt:'Image of a Bakery Store',
+    img: Bakery,
+    id: 3,
+    title: "MVC Application with Authentication",
+    href:'https://github.com/CanadianRunner/PierresSweetAndSavoryTreats.Solution'
+  },
+  {
+    alt:'Image of a Formula One Season Tracker',
+    img: F1,
+    id:4,
+    title: "JavaScript Team Built Application",
+    href:'https://github.com/CanadianRunner/Formula-One-App'
+  }
+];
+
 function Projects(props) {
-  const showDetails = (e) => {
-    console.log('mouse is hovering')
-    // e.target.classList.add();
+  const showDetails = (e, id) => {
+    const el = document.getElementById(id);
+    el.classList.add('relative-title');
+    e.target.classList.add('card-hover');
   }
 
-  const removeDetails = (e) => {
-    console.log('mouse stopped hovering')
-    // e.target.classList.remove()
+  const removeDetails = (e, id) => {
+    const el = document.getElementById(id);
+    e.target.classList.remove('card-hover');
+    el.classList.remove('relative-title');
   }
 
   return (
@@ -25,74 +58,27 @@ function Projects(props) {
       <span className='projects__title'>
       <h1>My Projects</h1>
       </span>
-      <div className='projects__card-group1'>
-        <Card onMouseEnter={showDetails} onMouseLeave={removeDetails} className='projects__card'>
-          <CardMedia
-            className='projects__card-image'
-            component="img"
-            height="100%"
-            image={Factory}
-            alt="thing"
-          />
-          <div>
-            Hello World
-          </div>
-          {/* <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Lizard
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over 6,000
-              species, ranging across all continents except Antarctica
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button size="small"><FontAwesomeIcon icon={faGithub}/></Button>
-          </CardActions> */}
-        </Card>
-
-        <Card onMouseEnter={showDetails} onMouseLeave={removeDetails} className='projects__card'>
-          <CardMedia
-            className='projects__card-image'
-            component="img"
-            height="100%"
-            image={Dotties}
-            alt="thing"
-          />
-          <div>
-            Hello World
-          </div>
-        </Card>
-        </div>
-        <div className='projects__card-group2'>
-        <Card onMouseEnter={showDetails} onMouseLeave={removeDetails} className='projects__card'>
-          <CardMedia
-            className='projects__card-image'
-            component="img"
-            height="100%"
-            image={Bakery}
-            alt="thing"
-          />
-          <div>
-            Hello World
-          </div>
-        </Card>
-
-        <Card onMouseEnter={showDetails} onMouseLeave={removeDetails} className='projects__card'>
-          <CardMedia
-            className='projects__card-image'
-            component="img"
-            height="100%"
-            image={F1}
-            alt="thing"
-          />
-          <div>
-            Hello World
-          </div>
-        </Card>
-        </div>
+      <div className='projects__card-groups'>
+        {projects.map((project, i) => {
+          return (
+            <Card onMouseEnter={(e) => showDetails(e, project.id)} onMouseLeave={(e) => removeDetails(e, project.id)} className='projects__card'>
+              <CardMedia
+                className='projects__card-image'
+                component="img"
+                height="100%"
+                image={project.img}
+                alt={project.alt}
+              />
+                <a href={project.href}>
+                  <div id={project.id} className="projects__card-content">
+                    {project.title}
+                  </div>
+                </a>
+            </Card>
+          )
+        })}
       </div>
-    
+    </div>
   )
 }
 

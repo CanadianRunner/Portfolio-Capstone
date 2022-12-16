@@ -8,32 +8,50 @@
     font-size: 1.5rem;
     color: #213D58;
     padding: 2%;
-  
   }
 
-  &__card-group1 {
+  &__card-groups {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     padding-bottom: 5%;
+    gap: 25px;
   }
-  
   
   &__card {
     max-height: 35%;
     max-width: 35%;
-    
- 
-    
+
   }
 
   &__card-image {
     object-fit: cover;
   }
 
-  &__card-group2 {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+  &__card-content {
+    padding: 15px;
   }
+}
+
+.relative-title {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 99999;
+  bottom: 120px;
+  left: 0;
+  color: white;
+  font-size: 20px;
+  background: linear-gradient(
+    hsl(20 0% 0% / .7),
+    hsl(0 0% 0% / 1.2)
+  );
+}
+
+.card-hover {
+  background: linear-gradient(
+    hsl(20 0% 0% / .3),
+    hsl(0 0% 0% / .7)
+  );
 }

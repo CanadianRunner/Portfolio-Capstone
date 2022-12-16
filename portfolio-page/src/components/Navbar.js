@@ -51,12 +51,13 @@ function Navbar(props) {
         break
       }
     }
+
     if (curSection !== activeItem) {
       setActiveItem(curSection)
     }
   };
   
-  const menuList = Object.keys(navItems).map((e, i) => 
+  const menuList = Object.keys(navItems).map((e, i) =>
     <NavItem itemName={e} key={`navitem_${i}`} active={e === activeItem ? true : false}  index={i}/>
   )
   return (
