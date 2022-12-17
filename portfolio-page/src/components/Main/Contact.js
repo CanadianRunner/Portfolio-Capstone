@@ -64,6 +64,7 @@ export const Contact = () => {
                   color="#213D58"
                   size="3x"
                   href=""
+                  alt='Clickable icon that takes you to my Linkedin'
                 />
               </a>
             </div>
@@ -71,14 +72,22 @@ export const Contact = () => {
           <div className="contact__link">
             <div className="contact__github">
               <a href="https://github.com/CanadianRunner">
-                <FontAwesomeIcon icon={faGithub} color="#213D58" size="3x" />
+                <FontAwesomeIcon 
+                  icon={faGithub} 
+                  color="#213D58" 
+                  size="3x" 
+                  alt='Clickable icon that takes you to my Github'/>
               </a>
             </div>
           </div>
           <div className="contact__link">
             <div className="contact__email">
               <a href="mailto: code@sean-keane.com">
-                <FontAwesomeIcon icon={faEnvelope} color="#213D58" size="3x" />
+                <FontAwesomeIcon 
+                  icon={faEnvelope} 
+                  color="#213D58" 
+                  size="3x" 
+                  alt='Clickable icon that redirects you to my email address'/>
               </a>
             </div>
           </div>
@@ -91,6 +100,7 @@ export const Contact = () => {
               name="user_name"
               className="sm-input-form"
               required="required"
+              alt='Text box for your name'
             />
             <label className="bold">Email: </label>
             <input
@@ -98,6 +108,7 @@ export const Contact = () => {
               name="user_email"
               className="sm-input-form"
               required="required"
+              alt='Text box for your email'
             />
             <label className="bold">Message: </label>
             <textarea
@@ -105,12 +116,14 @@ export const Contact = () => {
               className="textarea-form"
               required="required"
               placeholder="Type message here..."
+              alt='Text box for your message'
             />
             <input
               type="submit"
               value="Send"
               onClick={showSucessAlert}
               className="input-button"
+              alt='Submit button for contact form'
             />
             {/* <input type="submit" value="Send" onClick={showSucessAlert} disabled={isButtonDisabled} className="input-button"/> */}
           </form>

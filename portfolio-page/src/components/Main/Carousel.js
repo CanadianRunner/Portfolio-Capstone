@@ -46,7 +46,7 @@ function Carousel({ images }) {
                   : "carousel_card"
               }
             >
-              <img className="card_image" src={image.image} alt="" />
+              <img className="card_image" src={image.image} alt="These are relevant coding certificates I've attained" />
               <div className="card_overlay">
                 <h2 className="card_title">{image.title}</h2>
               </div>

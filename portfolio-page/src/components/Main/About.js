@@ -22,7 +22,7 @@ function About(props) {
         </Card>
       </div>
       <div className='about__video-container'>
-        <video src={WorkingVid} className="about__video" autoPlay="1" muted loop>
+        <video src={WorkingVid} className="about__video" autoPlay="1" muted loop alt='Video of Sean working at his desk'>
         </video>
       </div>
     </div>

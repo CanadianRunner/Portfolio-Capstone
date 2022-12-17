@@ -4,7 +4,7 @@
 
 #### Just interested in checking out my website?  Go to [sean-keane.com](https://sean-keane.com)!
 
-#### Portfolio Page Capstone - Epicodus Code Review 12/19/2022
+#### Portfolio Page Capstone - Epicodus Code Review 12/18/2022
 
 ## Technologies Used
 
