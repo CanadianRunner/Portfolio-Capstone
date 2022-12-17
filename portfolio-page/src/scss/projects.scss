@@ -39,10 +39,11 @@
   width: 100%;
   position: relative;
   z-index: 99999;
-  bottom: 120px;
+  bottom: 100%;
   left: 0;
   color: white;
-  font-size: 20px;
+  text-align: center;
+  font-size: 40px;
   background: linear-gradient(
     hsl(20 0% 0% / .7),
     hsl(0 0% 0% / 1.2)

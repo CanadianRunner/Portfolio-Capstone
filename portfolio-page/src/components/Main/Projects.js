@@ -1,7 +1,5 @@
 import React from 'react'
-import { Card, CardContent, CardActions, CardMedia, Typography, Button } from '@mui/material';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Card, CardMedia } from '@mui/material';
 import Factory from '../../assets/Factory_Repo.png';
 import Dotties from '../../assets/Dotties_Repo.png';
 import Bakery from '../../assets/Bakery_Repo.png';
@@ -11,31 +9,31 @@ import '../../scss/projects.scss';
 
 const projects = [
   {
-    alt:'image of factory',
+    alt:'This is an image of C# app and links to the github repo.',
     img: Factory,
     id: 1,
-    title:'C# MVC Application',
+    title:'C#/MySQL Application with many to many relationships',
     href: 'https://github.com/CanadianRunner/SillystringzsFactory.Solution'
   },
   {
-    alt:'Image of apothecary store',
+    alt:'This is an image of my Team Week app and links to the github repo.',
     img: Dotties,
     id: 2,
-    title: "Team Built Application",
+    title: "C#/MySQL Team Built Custom StoreFront Application",
     href:'https://github.com/CanadianRunner/DottiesApothecarry.Solution'
   },
   {
-    alt:'Image of a Bakery Store',
+    alt:'This is an image of C# app and links to the github repo.',
     img: Bakery,
     id: 3,
-    title: "MVC Application with Authentication",
+    title: "C# MVC Application with Authentication/Identity utilizing mySQL",
     href:'https://github.com/CanadianRunner/PierresSweetAndSavoryTreats.Solution'
   },
   {
-    alt:'Image of a Formula One Season Tracker',
+    alt:'Image of a Formula One Season Tracker and links to the github repo',
     img: F1,
     id:4,
-    title: "JavaScript Team Built Application",
+    title: "JavaScript Team Built Application with 3rd party API integration",
     href:'https://github.com/CanadianRunner/Formula-One-App'
   }
 ];

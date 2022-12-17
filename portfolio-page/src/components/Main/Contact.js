@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef} from "react";
 import emailjs from "@emailjs/browser";
 import { Card } from "@mui/material";
 import { ToastContainer, toast } from "react-toastify";
@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import skLogo from "../../assets/Sean-Keane_LOGO.png";
-import LevelUp from "../../assets/level-up.gif";
+import LevelUp from "../../assets/Software-LevelUp.gif";
 
 export const Contact = () => {
   // const [isButtonDisabled, setIsButttonDisabled] = useState(false)
@@ -20,7 +20,8 @@ export const Contact = () => {
         <img className="notifyGif" src={LevelUp} alt="successGif" />
       ),
       position: toast.POSITION.BOTTOM_CENTER,
-      autoClose: 10000,
+      autoClose: 20000,
+      draggable: true,
     });
     // setTimeout(() => {
     //   setIsButttonDisabled(false);
@@ -33,10 +34,10 @@ export const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_p5sqp5b",
-        "template_4pvoxgs",
-        form.current,
-        "a4YzlKwJPLkvH2eOz"
+        // "service_p5sqp5b",
+        // "template_4pvoxgs",
+        // form.current,
+        // "a4YzlKwJPLkvH2eOz"
       )
       .then(
         (result) => {
