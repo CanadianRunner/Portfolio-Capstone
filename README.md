@@ -2,7 +2,7 @@
 
 #### By _**Sean Keane**_
 
-#### Just interested in checking out my website?  Go to [sean-keane.com](sean-keane.com)!
+#### Just interested in checking out my website?  Go to [sean-keane.com](https://sean-keane.com)!
 
 #### Portfolio Page Capstone - Epicodus Code Review 12/19/2022
 
