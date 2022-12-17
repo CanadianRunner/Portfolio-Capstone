@@ -48,7 +48,7 @@ _This is a project that caps ten months of study at my Bootcamp.  I built a cust
 ![Deployed Site](SiteExample.gif)
 
 ## Project can be found at:
-https://github.com/CanadianRunner/Local_Business_Tracker.git
+[Here!](https://github.com/CanadianRunner/Portfolio-Capstone)
 
 ## Known Bugs
 
