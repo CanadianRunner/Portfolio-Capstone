@@ -27,7 +27,7 @@
 
 
 ## Description
-_This is a project that caps ten months of study at my Bootcamp.  I built a custom server that hosts this application.  It was my first experience utilizing Docker, and it challenged my understanding of networking.   After many attempts, I wrote my first script that allows for quick updates for the site.  Running one command on my server deletes the current dockerized app, clones this repo to the server, enters the correct directory, builds a new app based on the updated repo, and hosts the latest build.  Developing this application helped grow my understanding of JSX syntax, scss styling,  many new dependencies, networking, hardware,   documentation, and honestly, growth as a software developer. _
+This is a project that caps ten months of study at my Bootcamp.  I built a custom server that hosts this application.  It was my first experience utilizing Docker, and it challenged my understanding of networking.   After many attempts, I wrote my first script that allows for quick updates for the site.  Running one command on my server deletes the current dockerized app, clones this repo to the server, enters the correct directory, builds a new app based on the updated repo, and hosts the latest build.  Developing this application helped grow my understanding of JSX syntax, scss styling,  many new dependencies, networking, hardware,   documentation, and honestly, growth as a software developer. 
 
 
 ## Setup/Installation Requirements
