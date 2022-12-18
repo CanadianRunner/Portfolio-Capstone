@@ -1,13 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { useEffect } from 'react';
-import { useState } from 'react';
-import '../../scss/repos.scss';
+import React from "react";
+import PropTypes from "prop-types";
+import { useEffect } from "react";
+import { useState } from "react";
+import "../../scss/repos.scss";
 
-function Repos( {images} ) {
+function Repos({ images }) {
   const [current, setCurrent] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
-  let timeOut= null;
+  let timeOut = null;
 
   useEffect(() => {
     timeOut =
@@ -62,23 +62,23 @@ function Repos( {images} ) {
         </div>
         <div className="carousel_pagination">
           {images.map((_, index) => {
-  return (
-    <div
-    key={index}
-    className={
-      index == current
-        ? "pagination_dot pagination_dot-active"
-        : "pagination_dot"
-    }
-    onClick={() => setCurrent(index)}
-  ></div>
-);
-})}
-</div>
-</div>
-</div>
-);
+            return (
+              <div
+                key={index}
+                className={
+                  index == current
+                    ? "pagination_dot pagination_dot-active"
+                    : "pagination_dot"
+                }
+                onClick={() => setCurrent(index)}
+              ></div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
 }
-Repos.propTypes = {}
+Repos.propTypes = {};
 
-export default Repos
+export default Repos;

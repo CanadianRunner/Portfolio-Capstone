@@ -1,4 +1,4 @@
-import React, { useRef} from "react";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Card } from "@mui/material";
 import { ToastContainer, toast } from "react-toastify";
@@ -33,12 +33,12 @@ export const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        // "service_p5sqp5b",
-        // "template_4pvoxgs",
-        // form.current,
-        // "a4YzlKwJPLkvH2eOz"
-      )
+      .sendForm
+      // "service_p5sqp5b",
+      // "template_4pvoxgs",
+      // form.current,
+      // "a4YzlKwJPLkvH2eOz"
+      ()
       .then(
         (result) => {
           console.log(result.text);
@@ -64,7 +64,7 @@ export const Contact = () => {
                   color="#213D58"
                   size="3x"
                   href=""
-                  alt='Clickable icon that takes you to my Linkedin'
+                  alt="Clickable icon that takes you to my Linkedin"
                 />
               </a>
             </div>
@@ -72,22 +72,24 @@ export const Contact = () => {
           <div className="contact__link">
             <div className="contact__github">
               <a href="https://github.com/CanadianRunner">
-                <FontAwesomeIcon 
-                  icon={faGithub} 
-                  color="#213D58" 
-                  size="3x" 
-                  alt='Clickable icon that takes you to my Github'/>
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  color="#213D58"
+                  size="3x"
+                  alt="Clickable icon that takes you to my Github"
+                />
               </a>
             </div>
           </div>
           <div className="contact__link">
             <div className="contact__email">
               <a href="mailto: code@sean-keane.com">
-                <FontAwesomeIcon 
-                  icon={faEnvelope} 
-                  color="#213D58" 
-                  size="3x" 
-                  alt='Clickable icon that redirects you to my email address'/>
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  color="#213D58"
+                  size="3x"
+                  alt="Clickable icon that redirects you to my email address"
+                />
               </a>
             </div>
           </div>
@@ -100,7 +102,7 @@ export const Contact = () => {
               name="user_name"
               className="sm-input-form"
               required="required"
-              alt='Text box for your name'
+              alt="Text box for your name"
             />
             <label className="bold">Email: </label>
             <input
@@ -108,7 +110,7 @@ export const Contact = () => {
               name="user_email"
               className="sm-input-form"
               required="required"
-              alt='Text box for your email'
+              alt="Text box for your email"
             />
             <label className="bold">Message: </label>
             <textarea
@@ -116,14 +118,14 @@ export const Contact = () => {
               className="textarea-form"
               required="required"
               placeholder="Type message here..."
-              alt='Text box for your message'
+              alt="Text box for your message"
             />
             <input
               type="submit"
               value="Send"
               onClick={showSucessAlert}
               className="input-button"
-              alt='Submit button for contact form'
+              alt="Submit button for contact form"
             />
             {/* <input type="submit" value="Send" onClick={showSucessAlert} disabled={isButtonDisabled} className="input-button"/> */}
           </form>
