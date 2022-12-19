@@ -22,15 +22,13 @@ function Education(props) {
                   src={Epicodus}
                   alt="Epicodus Bootcamp Logo"
                   width={300}
-                  href="https://www.epicodus.com/"
-                ></img>
+                  href="https://www.epicodus.com/"></img>
               </div>
               <div className="education__wgu">
                 <img
                   src={WGU2}
                   alt="Western Governors University Logo"
-                  width={300}
-                ></img>
+                  width={300}></img>
               </div>
               <div className="education__codecademy">
                 <img src={Codecademy} alt="Codecademy Logo" width={300}></img>

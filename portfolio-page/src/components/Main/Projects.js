@@ -62,16 +62,14 @@ function Projects(props) {
             <Card
               onMouseEnter={(e) => showDetails(e, project.id)}
               onMouseLeave={(e) => removeDetails(e, project.id)}
-              className="projects__card"
-            >
+              className="projects__card">
               <CardMedia
                 className="projects__card-image"
                 component="img"
                 height="100%"
                 image={project.img}
-                alt={project.alt}
-              />
-              <a href={project.href}>
+                alt={project.alt}/>
+                <a href={project.href}>
                 <div id={project.id} className="projects__card-content">
                   {project.title}
                 </div>

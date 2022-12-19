@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef} from "react";
 import emailjs from "@emailjs/browser";
 import { Card } from "@mui/material";
 import { ToastContainer, toast } from "react-toastify";
@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import skLogo from "../../assets/Sean-Keane_LOGO.png";
-import LevelUp from "../../assets/Software-LevelUp.gif";
+import LevelUp from "../../assets/level-up.gif";
 
 export const Contact = () => {
   // const [isButtonDisabled, setIsButttonDisabled] = useState(false)
@@ -20,8 +20,7 @@ export const Contact = () => {
         <img className="notifyGif" src={LevelUp} alt="successGif" />
       ),
       position: toast.POSITION.BOTTOM_CENTER,
-      autoClose: 20000,
-      draggable: true,
+      autoClose: 10000,
     });
     // setTimeout(() => {
     //   setIsButttonDisabled(false);
@@ -33,12 +32,12 @@ export const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm
-      // "service_p5sqp5b",
-      // "template_4pvoxgs",
-      // form.current,
-      // "a4YzlKwJPLkvH2eOz"
-      ()
+      .sendForm(
+        "service_p5sqp5b",
+        "template_4pvoxgs",
+        form.current,
+        "a4YzlKwJPLkvH2eOz"
+      )
       .then(
         (result) => {
           console.log(result.text);
@@ -63,33 +62,21 @@ export const Contact = () => {
                   icon={faLinkedin}
                   color="#213D58"
                   size="3x"
-                  href=""
-                  alt="Clickable icon that takes you to my Linkedin"
-                />
+                  href=""/>
               </a>
             </div>
           </div>
           <div className="contact__link">
             <div className="contact__github">
               <a href="https://github.com/CanadianRunner">
-                <FontAwesomeIcon
-                  icon={faGithub}
-                  color="#213D58"
-                  size="3x"
-                  alt="Clickable icon that takes you to my Github"
-                />
+                <FontAwesomeIcon icon={faGithub} color="#213D58" size="3x" />
               </a>
             </div>
           </div>
           <div className="contact__link">
             <div className="contact__email">
               <a href="mailto: code@sean-keane.com">
-                <FontAwesomeIcon
-                  icon={faEnvelope}
-                  color="#213D58"
-                  size="3x"
-                  alt="Clickable icon that redirects you to my email address"
-                />
+                <FontAwesomeIcon icon={faEnvelope} color="#213D58" size="3x" />
               </a>
             </div>
           </div>
@@ -101,32 +88,24 @@ export const Contact = () => {
               type="text"
               name="user_name"
               className="sm-input-form"
-              required="required"
-              alt="Text box for your name"
-            />
+              required="required"/>
             <label className="bold">Email: </label>
             <input
               type="email"
               name="user_email"
               className="sm-input-form"
-              required="required"
-              alt="Text box for your email"
-            />
+              required="required"/>
             <label className="bold">Message: </label>
             <textarea
               name="message"
               className="textarea-form"
               required="required"
-              placeholder="Type message here..."
-              alt="Text box for your message"
-            />
+              placeholder="Type message here..."/>
             <input
               type="submit"
               value="Send"
               onClick={showSucessAlert}
-              className="input-button"
-              alt="Submit button for contact form"
-            />
+              className="input-button"/>
             {/* <input type="submit" value="Send" onClick={showSucessAlert} disabled={isButtonDisabled} className="input-button"/> */}
           </form>
         </div>
@@ -140,3 +119,4 @@ export const Contact = () => {
 };
 
 export default Contact;
+

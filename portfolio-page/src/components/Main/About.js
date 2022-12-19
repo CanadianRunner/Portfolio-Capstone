@@ -10,8 +10,7 @@ function About(props) {
         <Card
           variant="outlined"
           className="about__card"
-          sx={{ background: "#E7F6F2" }}
-        >
+          sx={{ background: "#E7F6F2" }}>
           <div className="about__content">
             <h2 className="about__title">About me</h2>
             <div className="about__body">
@@ -41,8 +40,7 @@ function About(props) {
           autoPlay="1"
           muted
           loop
-          alt="Video of Sean working at his desk"
-        ></video>
+          alt="Video of Sean working at his desk"></video>
       </div>
     </div>
   );

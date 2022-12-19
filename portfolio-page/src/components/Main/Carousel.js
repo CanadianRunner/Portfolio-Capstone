@@ -33,8 +33,7 @@ function Carousel({ images }) {
       }}
       onMouseLeave={() => {
         setAutoPlay(true);
-      }}
-    >
+      }}>
       <div className="carousel_wrapper" id="carouselWrapper">
         {images.map((image, index) => {
           return (
@@ -44,8 +43,7 @@ function Carousel({ images }) {
                 index === current
                   ? "carousel_card carousel_card-active"
                   : "carousel_card"
-              }
-            >
+              }>
               <img
                 className="card_image"
                 src={image.image}
@@ -73,8 +71,8 @@ function Carousel({ images }) {
                     ? "pagination_dot pagination_dot-active"
                     : "pagination_dot"
                 }
-                onClick={() => setCurrent(index)}
-              ></div>
+                onClick={() => setCurrent(index)}>
+                </div>
             );
           })}
         </div>
