@@ -18,7 +18,7 @@ const navIcons = [
   faEnvelopeOpenText,
 ];
 
-const NavItem = ({ itemName, active, index }) => {
+const NavItem = ({ itemName, active, index, iconIsVisible }) => {
   const [anchorTarget, setAnchorTarget] = useState(null);
 
   useEffect(() => {
@@ -37,11 +37,13 @@ const NavItem = ({ itemName, active, index }) => {
         onClick={handleClick}
         className={itemName === "homeId" ? "active" : ""}
         aria-label={`Scroll to ${itemName}`}>
+        {iconIsVisible ? 
         <FontAwesomeIcon
           icon={navIcons[index]}
           color="#A5C9CA"
           size="2x"
-          alt="home button"/>
+          alt="home button"/> : ''
+        }
       </a>
     </div>
   );

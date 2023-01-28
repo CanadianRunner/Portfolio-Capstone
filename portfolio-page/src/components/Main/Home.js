@@ -14,7 +14,7 @@ function Home(props) {
     <div className="home" id="homeId">
       <SplashPage />
       <About />
-      <Skills />
+      {/* <Skills /> */}
       <Carousel images={certificates} />
       <Education />
       <Projects />

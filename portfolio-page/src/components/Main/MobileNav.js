@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import "../scss/navbar.scss";
-import FaviconMyLogo from "../assets/FaviconMyLogo.png";
-import NavItem from "./Main/NavItem";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { useState, useEffect } from 'react';
+import  NavItem from './NavItem';
+
 
 const navItems = {
   homeId: null,
@@ -14,7 +13,7 @@ const navItems = {
   contactCard: null,
 };
 
-function Navbar() {
+function MobileNav(props) {
   const [activeItem, setActiveItem] = useState("homeId");
 
   useEffect(() => {
@@ -28,16 +27,16 @@ function Navbar() {
 
   const getAnchorPoints = () => {
     const curScroll = window.scrollY - 100;
-    const viewPortHeight = Math.max(
-      document.documentElement.clientHeight,
-      window.innerHeight || 0
-    );
+    // const viewPortHeight = Math.max(
+    //   document.documentElement.clientHeight,
+    //   window.innerHeight || 0
+    // );
 
     for (const key in navItems) {
       navItems[key] =
         document.getElementById(key).getBoundingClientRect().top + curScroll;
     }
-    const bottom = document.body.offsetHeight;
+    // const bottom = document.body.offsetHeight;
     handleScroll();
   };
 
@@ -62,33 +61,21 @@ function Navbar() {
       key={`navitem_${i}`}
       active={e === activeItem ? true : false}
       index={i}
-      iconIsVisible={true}
+      iconIsVisible={false}
     />
-  ));
+  ))
   return (
-    <div className="navbar">
-      <img
-        className="navbar__logo"
-        src={FaviconMyLogo}
-        alt="a logo of the pnw mountain range"
-      />
-      <nav className="navbar__link-group">{menuList}</nav>
-
-      <div className="navbar__github">
-        <a href="https://github.com/CanadianRunner">
-          <FontAwesomeIcon
-            icon={faGithub}
-            color="#A5C9CA"
-            size="2x"
-            href="https://github.com/CanadianRunner"
-            alt="Link to Seans Github"
-          />
-        </a>
+    <div className='mobile-nav'>
+      <div className='mobile-nav__header'>
+        <h1>Menu</h1>
+      </div>
+      <div className='mobile-nav__nav-items'>
+        {menuList}
       </div>
     </div>
-  );
+  )
 }
 
-Navbar.propTypes = {};
+MobileNav.propTypes = {}
 
-export default Navbar;
+export default MobileNav
