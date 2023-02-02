@@ -18,12 +18,12 @@ const navIcons = [
   faEnvelopeOpenText,
 ];
 
-const NavItem = ({ itemName, active, index, iconIsVisible }) => {
+const NavItem = ({ itemName, active, index, iconIsVisible, itemId }) => {
   const [anchorTarget, setAnchorTarget] = useState(null);
 
   useEffect(() => {
-    setAnchorTarget(document.getElementById(itemName));
-  }, [itemName]);
+    setAnchorTarget(document.getElementById(itemId));
+  }, [itemId]);
 
   const handleClick = (event) => {
     event.preventDefault();
@@ -33,16 +33,17 @@ const NavItem = ({ itemName, active, index, iconIsVisible }) => {
   return (
     <div className="navbar__link">
       <a
-        href={`#${itemName}`}
+        href={`#${itemId}`}
         onClick={handleClick}
-        className={itemName === "homeId" ? "active" : ""}
+        className={active ? "active" : ""}
+        style={{textDecoration: 'none'}}
         aria-label={`Scroll to ${itemName}`}>
         {iconIsVisible ? 
         <FontAwesomeIcon
           icon={navIcons[index]}
           color="#A5C9CA"
           size="2x"
-          alt="home button"/> : ''
+          alt="home button"/> : <h4 className={itemName === "home" ? "active navbar__name-link" : "navbar__name-link"}>{itemName}</h4>
         }
       </a>
     </div>

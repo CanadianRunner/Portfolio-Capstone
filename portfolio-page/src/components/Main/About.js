@@ -4,6 +4,19 @@ import "../../scss/about.scss";
 import { Card } from "@mui/material";
 
 function About(props) {
+  const isMobile = () => {
+    if (window.outerWidth > 912) {
+      return <div className="about__video-container">
+      <video
+        src={WorkingVid}
+        className="about__video"
+        autoPlay="1"
+        muted
+        loop
+        alt="Video of Sean working at his desk"></video>
+    </div>
+    }
+  }
   return (
     <div className="about" id="aboutMe">
       <div className="about__me">
@@ -33,15 +46,7 @@ function About(props) {
           </div>
         </Card>
       </div>
-      <div className="about__video-container">
-        <video
-          src={WorkingVid}
-          className="about__video"
-          autoPlay="1"
-          muted
-          loop
-          alt="Video of Sean working at his desk"></video>
-      </div>
+      {isMobile()}
     </div>
   );
 }

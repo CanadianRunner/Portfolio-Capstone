@@ -60,6 +60,7 @@ function Projects(props) {
         {projects.map((project, i) => {
           return (
             <Card
+              key={i}
               onMouseEnter={(e) => showDetails(e, project.id)}
               onMouseLeave={(e) => removeDetails(e, project.id)}
               className="projects__card">
