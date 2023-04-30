@@ -11,7 +11,6 @@ import Education from "./Education";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 
-
 function Home(props) {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const screenSizeAlertShown = useRef(false);
@@ -19,10 +18,13 @@ function Home(props) {
   const showScreenSizeAlert = () => {
     if (!screenSizeAlertShown.current) {
       screenSizeAlertShown.current = true;
-      toast.info("This site is best viewed on a desktop or laptop computer. Mobile styling is currently under construction.", {
-        position: toast.POSITION.TOP_CENTER,
-        autoClose: 5000,
-      });
+      toast.info(
+        "This site is best viewed on a desktop or laptop computer. Mobile styling is currently under construction.",
+        {
+          position: toast.POSITION.TOP_CENTER,
+          autoClose: 10000,
+        }
+      );
     }
   };
 

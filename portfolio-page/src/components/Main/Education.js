@@ -22,13 +22,15 @@ function Education(props) {
                   src={Epicodus}
                   alt="Epicodus Bootcamp Logo"
                   width={300}
-                  href="https://www.epicodus.com/"></img>
+                  href="https://www.epicodus.com/"
+                ></img>
               </div>
               <div className="education__wgu">
                 <img
                   src={WGU2}
                   alt="Western Governors University Logo"
-                  width={300}></img>
+                  width={300}
+                ></img>
               </div>
               <div className="education__codecademy">
                 <img src={Codecademy} alt="Codecademy Logo" width={300}></img>
@@ -36,22 +38,20 @@ function Education(props) {
             </div>
             <div className="education__body">
               <p>
-                I recently completed a time-intensive Bootcamp at Epicodus. This
+                I completed a time-intensive Bootcamp at Epicodus. This
                 ten-month-long commitment helped develop my understanding of
                 HTML, CSS, JavaScript, React, C#/.NET, MySQL, and many more
-                technologies. In addition, my Bootcamp readied me for the
-                workforce with daily stand-ups/retrospectives, bi-weekly code
-                reviews, and over 800 hours of pair programming.
+                technologies.
               </p>
               <br></br>
               <p>
-                I also pursued certifications and learning opportunities from
-                Codecademy and Coursera. These opportunities helped fill
-                knowledge gaps and solidified complex concepts.
+                I also regulary pursue certifications and learning opportunities
+                from third party certification bodies. These opportunities help
+                fill knowledge gaps and solidify complex concepts.
               </p>
               <br></br>
               <p>
-                I recently transferred to Western Governors University and will
+                I am currently attending Western Governors University and will
                 complete my B.S. in Software Engineering, focusing on Java.
               </p>
             </div>

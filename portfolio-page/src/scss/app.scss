@@ -9,8 +9,33 @@
   }
 }
 
+
 .home {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+:root {
+  --toastify-toast-width: 500px !important;
+  --toastify-toast-max-height: 1000px !important;
+}
+
+.Toastify__toast-body {
+  display: flex !important;
+  flex-direction: column-reverse !important;
+  gap: 10px;
+
+  div {
+    font-size: 18px;
+    font-weight: 700;
+    color: #213D58;
+  }
+}
+
+.notifyGif {
+  position: relative;
+  right: 200px;
+  max-width: 450px;
+  height:auto;
 }

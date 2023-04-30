@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Card } from "@mui/material";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 import "../../scss/contact.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,21 +11,23 @@ import skLogo from "../../assets/Sean-Keane_LOGO.png";
 import LevelUp from "../../assets/level-up.gif";
 
 export const Contact = () => {
-  // const [isButtonDisabled, setIsButttonDisabled] = useState(false)
+  const contactToastId = useRef(null);
 
-  const showSucessAlert = (e) => {
-    // setIsButttonDisabled(true);
-    toast.success("Message sent!", {
-      icon: ({ dark, type }) => (
-        <img className="notifyGif" src={LevelUp} alt="successGif" />
-      ),
-      position: toast.POSITION.BOTTOM_CENTER,
-      autoClose: 10000,
-    });
-    // setTimeout(() => {
-    //   setIsButttonDisabled(false);
-    // }, 10000)
+  const showSucessAlert = () => {
+    if (contactToastId.current === null) {
+      contactToastId.current = toast.success("Message sent!", {
+        icon: ({ dark, type }) => (
+          <img className="notifyGif" src={LevelUp} alt="successGif" />
+        ),
+        position: toast.POSITION.BOTTOM_CENTER,
+        autoClose: 10000,
+        onClose: () => {
+          contactToastId.current = null;
+        },
+      });
+    }
   };
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -41,6 +43,7 @@ export const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          showSucessAlert();
         },
         (error) => {
           console.log(error.text);
@@ -62,7 +65,8 @@ export const Contact = () => {
                   icon={faLinkedin}
                   color="#213D58"
                   size="3x"
-                  href=""/>
+                  href=""
+                />
               </a>
             </div>
           </div>
@@ -88,24 +92,23 @@ export const Contact = () => {
               type="text"
               name="user_name"
               className="sm-input-form"
-              required="required"/>
+              required="required"
+            />
             <label className="bold">Email: </label>
             <input
               type="email"
               name="user_email"
               className="sm-input-form"
-              required="required"/>
+              required="required"
+            />
             <label className="bold">Message: </label>
             <textarea
               name="message"
               className="textarea-form"
               required="required"
-              placeholder="Type message here..."/>
-            <input
-              type="submit"
-              value="Send"
-              onClick={showSucessAlert}
-              className="input-button"/>
+              placeholder="Type message here..."
+            />
+            <input type="submit" value="Send" className="input-button" />
             {/* <input type="submit" value="Send" onClick={showSucessAlert} disabled={isButtonDisabled} className="input-button"/> */}
           </form>
         </div>
@@ -113,10 +116,8 @@ export const Contact = () => {
           <img src={skLogo} alt="contact-logo" width={200}></img>
         </div>
       </Card>
-      <ToastContainer />
     </div>
   );
 };
 
 export default Contact;
-
